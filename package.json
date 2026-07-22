@@ -1,0 +1,24 @@
+{
+    "name": "vpn-detection-service",
+    "version": "1.0.0",
+    "description": "VPN/Proxy Detection Service with Browser Fingerprinting",
+    "type": "module",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node --watch server.js",
+        "sync": "node scripts/sync-database.js",
+        "update-db": "node scripts/updateDatabase.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "cors": "^2.8.5",
+        "sqlite3": "^5.1.6",
+        "geoip-lite": "^1.4.7",
+        "node-fetch": "^3.3.0",
+        "dotenv": "^16.0.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.22"
+    }
+}
